@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="index.html">자기소개</a></li>
+            <li role="presentation" class="active"><a href="diary.html">일기장</a></li>
+            <li role="presentation"><a href="goal.html">목표</a></li>
+        </ul>
+    <h2>�굹�쓽 �씪湲곗옣</h2>
+    <form action="diary" method="GET">
+        <div>
+            <label for= "title">제목: </label>
+            <input type= "text" id="title" name="title">
+        </div>
+        <div>
+            <label for= "mymood">나의 기분: </label>
+            <select name="mymood" id="mymood">
+                <option value="good">좋은날</option>
+                <option value="soso">그저그런날</option>
+                <option value="bad">나쁜날</option>
+            </select>
+        </div>
+    <div>
+        <label for="diary" ></label>
+        <textarea name="diary" id="diary" cols="40" rows="10"></textarea> 
+    </div>
+    <button type="submit">�젣異�</button>
+    </div>
+</body>
+</html>
