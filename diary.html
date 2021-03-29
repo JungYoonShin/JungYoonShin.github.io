@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>다이어리</title>
 </head>
 <body>
     <div class="container">
@@ -11,8 +18,8 @@
             <li role="presentation" class="active"><a href="diary.html">일기장</a></li>
             <li role="presentation"><a href="goal.html">목표</a></li>
         </ul>
-    <h2>�굹�쓽 �씪湲곗옣</h2>
-    <form action="diary" method="GET">
+        <h2>나의 일기장</h2>
+        <form action="diary" method="GET">
         <div>
             <label for= "title">제목: </label>
             <input type= "text" id="title" name="title">
@@ -25,11 +32,11 @@
                 <option value="bad">나쁜날</option>
             </select>
         </div>
-    <div>
-        <label for="diary" ></label>
-        <textarea name="diary" id="diary" cols="40" rows="10"></textarea> 
-    </div>
-    <button type="submit">�젣異�</button>
+        <div>
+            <label for="diary" ></label>
+            <textarea name="diary" id="diary" cols="40" rows="10"></textarea>
+        </div>
+       <button type="submit">제출</button>
     </div>
 </body>
 </html>
